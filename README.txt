@@ -6,11 +6,11 @@ Requires at least: 3
 Tested up to: 3.3.1
 Stable tag: trunk
 
-Query Slideshow is a plugin that adds 'Slideshow' as a Template Syyle for Query Wrangler.
+Query Slideshow is a plugin that adds 'Slideshow' as a Template Style for Query Wrangler.
 
 == Description ==
 
-Requires [Query Wrangler](http://wordpress.org/extend/plugins/query-wrangler/ "Query Wrangler") version 1.5+.
+**Requires [Query Wrangler](http://wordpress.org/extend/plugins/query-wrangler/ "Query Wrangler") version 1.5+.**
 
 When editing a query, this creates 'Slideshow' as a Template Style, using jquery.cycle.
 

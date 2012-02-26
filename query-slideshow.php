@@ -5,10 +5,10 @@
 Contributors:      daggerhart, forrest.livengood
 Plugin Name:       Query Slideshow
 Plugin URI:        http://www.widgetwrangler.com/query-wrangler
-Description:       Query Slideshow is a plugin that adds 'Slideshow' as a Template Syyle for Query Wrangler.
+Description:       Query Slideshow is a plugin that adds 'Slideshow' as a Template Style for Query Wrangler.
 Author:            Jonathan Daggerhart, Forrest Livengood
 Author URI:        http://www.websmiths.co
-Version:           1.5beta
+Version:           1.0
 
 ******************************************************************
 
