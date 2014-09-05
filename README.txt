@@ -3,7 +3,7 @@ Contributors: daggerhart, forrest.livengood
 Donate link: http://www.widgetwrangler.com/
 Tags: query, slideshow, query-wrangler
 Requires at least: 3
-Tested up to: 3.3.1
+Tested up to: 4.0
 Stable tag: trunk
 
 Query Slideshow is a plugin that adds 'Slideshow' as a Template Style for Query Wrangler.
@@ -31,10 +31,18 @@ Enable the plugin, then edit an existing Query Wrangler query, or create a new o
 
 == Changelog ==
 
+= 1.2 =
+
+* Bug Fix related to QW 1.5.25 hook changes
+
+= 1.1 =
+
+* Hook adjustments
+
 = 1.0 =
 
- * Initial Release
+* Initial Release
 
 == Upgrade Notice ==
 
-1.0 Initial release
+1.2 Fix for hook changes in QW 1.5.25

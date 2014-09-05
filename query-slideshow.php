@@ -3,13 +3,13 @@
 
 ******************************************************************
 
-Contributors:      daggerhart, forrest.livengood
+Contributors:      daggerhart
 Plugin Name:       Query Slideshow
-Plugin URI:        http://www.widgetwrangler.com/query-wrangler
+Plugin URI:        http://www.daggerhart.com
 Description:       Query Slideshow is a plugin that adds 'Slideshow' as a Template Style for Query Wrangler.
-Author:            Jonathan Daggerhart, Forrest Livengood
-Author URI:        http://www.websmiths.co
-Version:           1.0
+Author:            Jonathan Daggerhart
+Author URI:        http://www.daggerhart.com
+Version:           1.2
 
 ******************************************************************
 
@@ -47,7 +47,7 @@ add_filter('qw_styles', 'query_slideshow_styles', 20);
 /*
  * Hook qw_pre_render to enable jquery.cycle
  */
-function query_slideshow_pre_render(&$options){
+function query_slideshow_pre_render($options){
   if($options['display']['style'] == 'slideshow'){
     $settings = $options['display']['slideshow_settings'];
 
@@ -63,16 +63,18 @@ function query_slideshow_pre_render(&$options){
     // only enqueue script if slideshow is present
     wp_enqueue_script('jquery.cycle', plugins_url('/js/jquery.cycle.all.js', __FILE__ ), array('jquery'));
   }
+  return $options;
 }
 add_action('qw_pre_render', 'query_slideshow_pre_render');
 
 /*
  * Hook qw_preview to add cycle js
  */
-function query_slideshow_preview(&$options){
+function query_slideshow_preview($options){
   if($options['display']['style'] == 'slideshow'){
     print '<script type="text/javascript" src="'.plugins_url('/js/jquery.cycle.all.js', __FILE__ ).'"></script>';
   }
+  return $options;
 }
 add_action('qw_pre_preview', 'query_slideshow_preview');
 
@@ -80,6 +82,7 @@ add_action('qw_pre_preview', 'query_slideshow_preview');
  * Hook qw_pre_save
  */
 function query_slideshow_pre_save($options){
+  return $options;
 }
 add_action('qw_pre_save', 'query_slideshow_pre_save');
 
